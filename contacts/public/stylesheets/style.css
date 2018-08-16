@@ -1,0 +1,40 @@
+body{
+  background-image: url("images/header.jpg");
+  background-position: center center;
+  background-size: cover;
+  height: 100vh;
+}
+
+.margin-top-border
+{
+  border-top:1px solid #ccc;
+}
+
+.margin-top{
+  margin-top: 10px
+}
+.mainbox{
+  margin-top:50px;
+}
+.panel-body{
+  padding-top:30px;
+}
+.input-group{
+  margin-bottom: 25px;
+}
+.login{
+  margin-top:10px;
+}
+.text{
+  text-align:center;
+}
+.mainbox-two{
+  margin-top:50px;
+}
+.bottom{
+  border-top: 1px solid #999;
+  padding-top:20px;
+}
+.full-width{
+  width:100%;
+}

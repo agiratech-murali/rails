@@ -1,0 +1,63 @@
+<link href="stylesheets/contacts.css" rel="stylesheet">
+<div ng-include = "'templates/contacts/layout.html'"></div>
+<h1>Edit Contact</h1>
+<div id="wrapper" classname="wrapper" ng-init="new()">
+
+<form class="new_contact" ng-submit="create()" novalidate>
+  <div class="col-lg-12 col-md-12 col-sm-12">
+    <div class="col-2 col-lg-6 col-md-6 col-sm-12">
+      <label class="">
+        First Name
+        <input placeholder="What is your First name?" ng-model="contact.first_name" id="contact_first_name" type="text">
+      </label>
+    </div>
+    <div class="col-2 col-lg-6 col-md-6 col-sm-12">
+      <label class="">
+        Last Name
+        <input placeholder="What is your e-mail address?" ng-model="contact.last_name" id="contact_last_name" type="text">
+      </label>
+    </div>
+
+  </div>
+  <div class="col-lg-12 col-md-12 col-sm-12">
+    <div class="col-3 col-lg-4 col-md-4 col-sm-12">
+      <label class="">
+        Email
+        <input placeholder="What is your e-mail address?" ng-model="contact.email" id="contact_email" type="text">
+      </label>
+    </div>
+    <div class="col-3 col-lg-4 col-md-4 col-sm-12">
+      <label class="">
+        Phone Number
+        <input placeholder="What is the best # to reach you?" ng-model="contact.phone" id="contact_phone" type="text">
+      </label>
+    </div>
+    <div class="col-3 col-lg-4 col-md-4 col-sm-12">
+      <label>
+        Address
+        <textarea placeholder="What is your address?" ng-model="contact.address" id="contact_address"></textarea>
+      </label>
+    </div>
+  </div>
+  <div class="col-lg-12 col-md-12 col-sm-12">
+    <div class="col-4 col-lg-3 col-md-6 col-sm-12">
+      <label>
+        Date Of Birth
+        <input placeholder="DOB" class="datepicker hasDatepicker" date-format="mm/dd/yyyy" ng-model="contact.birthday" id="contact_birthday" type="text">
+      </label>
+    </div>
+    <div class="col-4 col-lg-3 col-md-6 col-sm-12">
+      <label>
+        Circle
+        <select ng-model="contact.circle" id="contact_circle"><option value="Family">Family</option>
+<option value="Friends">Friends</option></select>
+      </label>
+    </div>
+  </div>
+  <div class="col-lg-12 col-md-12 col-sm-12">
+    <div class="col-submit">
+      <button class="submitbtn">Save</button>
+    </div>
+  </div>
+</form>
+</div>
